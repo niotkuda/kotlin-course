@@ -44,6 +44,3 @@ var listOfAvailableEquipment: String = ""
 var ListOfFreeEquipment: String = "50" //список свободного оборудования будет через логику проставлен
 
 val planInCaseOfFailures: String = "План мероприятия на случай сбоев"
-
-
-
