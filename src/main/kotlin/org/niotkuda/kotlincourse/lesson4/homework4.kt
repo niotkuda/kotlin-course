@@ -83,5 +83,3 @@ val text: String = "Android Studio"
 
 
 
-
-
