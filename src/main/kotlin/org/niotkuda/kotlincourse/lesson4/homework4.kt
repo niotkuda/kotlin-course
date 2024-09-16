@@ -79,3 +79,10 @@ val myFloat: Float = 6.626f
 val myInt: Int = 0.007
 
 val text: String = "Android Studio"
+
+val myInt: Int = Int.MAX_VALUE
+
+
+
+
+
