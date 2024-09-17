@@ -1,6 +1,6 @@
 package org.niotkuda.kotlincourse.lesson5
 
-fun main()
+fun main() {
 val sum = "10" + "5"
 val diff = 10 - 5
 val product = 10 * 5
@@ -26,4 +26,4 @@ printIn(number)
 
 
 
-printIn(sum)// remember!
+

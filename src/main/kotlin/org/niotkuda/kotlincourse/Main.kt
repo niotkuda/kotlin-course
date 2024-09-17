@@ -1,4 +1,4 @@
-package com.juliana.org.niotkuda.kotlincourse
+/*package com.juliana.org.niotkuda.kotlincourse
 
 val name: String = "Alice"
 
@@ -8,7 +8,7 @@ const val PI = 3.14 // заметка
 
 lateinit var userInf: String
 
-/val lazyValue: String by lazy {
+val lazyValue: String by lazy {
     "Hello world!"}
 
 var speed: Double? = null
@@ -54,4 +54,4 @@ var fuel: ouble = 0.0
     }
 
 
-/
+*/
