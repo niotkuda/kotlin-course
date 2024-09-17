@@ -62,7 +62,7 @@ val myLong: Long = 72057594037927935L //проверить
 
 val myFloat: Float = 2.71828f
 
-val myInt: Int = 101.0101
+val myInt: Int = 101.0101 // DOUBLE
 
 val text: String = "Quantum Computing"
 
