@@ -1,4 +1,4 @@
-package org.niotkuda.kotlincourse.lesson4
+/*package org.niotkuda.kotlincourse.lesson4
 
 val myInt: Int = 42 //or byte? (-128.127)
 
@@ -83,3 +83,4 @@ val text: String = "Android Studio"
 
 
 
+*/

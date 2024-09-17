@@ -21,7 +21,12 @@ var number = 5
 number += 3
 number -= 2
 
-printIn(number)
+printIn(number--)
+    
+}
+
+fun printIn(number: Int) {
+
 }
 
 
