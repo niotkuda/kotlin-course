@@ -34,7 +34,7 @@ val myLong: Long = 10000000000L
 
 val myFloat: Float = 5.75f
 
-val anything: Any = 1.414 //тип будет известен в момент runtime
+val anything: Any = 1.414 //тип будет известен в момент runtime.
 
 val text: String = "Artificial Intelligence"
 
