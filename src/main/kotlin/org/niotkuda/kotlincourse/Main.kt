@@ -6,9 +6,9 @@ var age: Int = 30
 
 const val PI = 3.14 // заметка
 
-lateinit var userInfo: String
+lateinit var userInf: String
 
-val lazyValue: String by lazy {
+/val lazyValue: String by lazy {
     "Hello world!"}
 
 var speed: Double? = null
@@ -54,3 +54,4 @@ var fuel: ouble = 0.0
     }
 
 
+/
