@@ -6,7 +6,7 @@ val myLong: Long = 98765432123456789L //в нём же принято храни
 
 val myFloat: Float = 23.45f //плавающая точка получается
 
-val myInt: Int = 0.123456789
+val myInt: Int = 0.123456789 // ошибка Double
 
 val text: String = "Kotlin & Java"
 
@@ -20,7 +20,7 @@ val myLong: Long = 4294967296L
 
 val myFloat: Float = 18.0f
 
-val myInt: Int = -0.001 //???????
+val myInt: Int = -0.001 //??????? double!
 
 val text: String = "OpenAI"
 
@@ -34,7 +34,7 @@ val myLong: Long = 10000000000L
 
 val myFloat: Float = 5.75f
 
-val anything: Any = 1.414 //тип будет известен в момент runtime.
+val anything: Any = 1.414 //тип будет известен в момент runtime. DOUBLE
 
 val text: String = "Artificial Intelligence"
 
@@ -48,7 +48,7 @@ val myLong: Long = 1234567890123L
 
 val myFloat: Float = 10.01f
 
-val myInt: Int = -273.15
+val myInt: Int = -273.15 //DOUBLE
 
 val text: String = "SpaceX"
 
