@@ -1,8 +1,8 @@
 
 
-fun main () {
-    printSiteLang( lang: "Rus" )
-    printSiteLang( lang: null )
+/*fun main () {
+    printSiteLang(  "Rus" )
+    printSiteLang( null )
 
 }
 fun printPrice(price: Double, s: Int?){
@@ -13,6 +13,6 @@ fun printPrice(price: Double, s: Int?){
 fun printSiteLang(lang: String?){
     val defaultLang: String = "Eng"
     println(lang ?: defaultLang)
-}
+}fun printBoxStuff(stuff: String?)
 
-fun printBoxStuff(stuff: String?)
+ */
