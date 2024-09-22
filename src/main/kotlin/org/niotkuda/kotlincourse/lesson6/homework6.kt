@@ -1,9 +1,9 @@
 package org.niotkuda.kotlincourse.lesson6
 
 fun main(){
-    val intRange1: IntRange = 3..5
+    val season: IntRange = 3..5
     println("Spring")
-    val winter: Int = 12
+    val winter Int = 12
     println("Winter")
     val intRange2: IntRange = 1..2
     println("Spring")
