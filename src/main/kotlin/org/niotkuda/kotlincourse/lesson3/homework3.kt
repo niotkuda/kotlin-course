@@ -94,7 +94,7 @@ var listOborudov: String = "50"
 //Список свободного оборудования
 var listFreeOborudov: String = "50"
 //График питания участников (зависит от поставщика питания, определяемого за неделю до начала)
-lasy by or lateinit may be
+lateinit var grafic: String
 //План мероприятий на случай сбоев
 val planB: String = "text with plan"
 //Список экспертов и жюри
@@ -103,28 +103,32 @@ val typeListExperts: String "expert"
 private var lazyValue by lazy { ""
 }
 //Политика конфиденциальности
-private val lazyValue by lazy { "" }
+private val lazyValue by lazy { "" } //just String!
 
 //Приватные отзывы (фидбэк) участников и зрителей для анализа проблем.
-private var feedback: String = ""
+private var feedback: String = "" //NO
+private var lazyValue by lazy {}
 //Текущая температура в помещении
-var temp: String = "22"
+var temperature: Int = 25
+
 //Мониторинг и анализ производительности сетевого оборудования и интернет-соединения.
 var analis: String = "ok"
 
 //Уровень освещения
-val lump: String = "27"
+val lump: Int = 1100
 
 //Лог событий мероприятия ??
-val log: String = "i494u93"
+private var log: String = "i494u93"
+
 //Доступность медицинской помощи
 val medicalHelp: String = "Yes?"
-//Планы и процедуры для обеспечения безопасности мероприятия, включая планы эвакуации и протоколы чрезвычайных ситуаций.
-val lazyValue by lazy {
 
-}
+//Планы и процедуры для обеспечения безопасности мероприятия, включая планы эвакуации и протоколы чрезвычайных ситуаций.
+private val plocedure: String = ""
+
 //Регистрационный номер мероприятия
 val number: String = "32763623712"
+
 //Максимально допустимый уровень шума в помещении хакатона.
 val count: Int = 20
 
@@ -134,17 +138,21 @@ var count: Int = 20
     set(value) {
         if (value >20) field = value
     }
-
+var indicator: Boolean = true
+if count //ИСПРАВИТЬ
 //Формат мероприятия (зависит от геополитической обстановки)
 var format: String = "format"
+
 //Количество свободных мест для отдыха (например, кресел или диванов), сеттер валидирует, чтобы количество не было меньше нуля.
 var count: Int = 30
     get() = field
     set(value) {
         if(value >= 0) field = value
     }
+
 //План взаимодействия с прессой
 val pressaPlan: String = ""
+
 //Детальная информация о проектах каждой команды, сбор данных включает в себя компиляцию кода и сбор статистики прогона автоматизированных проверок.
 val lazyValue by lazy {
 
