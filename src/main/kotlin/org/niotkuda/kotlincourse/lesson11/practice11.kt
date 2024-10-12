@@ -86,31 +86,58 @@ fun main() {
     val mapWithNullableKey = mutableMapOf<String?, Int>(null to 1)
 
 
-
-
 // ПРАКТИКА
 // Создание пустого неизменяемого словаря, где ключами будут строки, а значениями целые числа
 
-val newMap: Map<String, Int> = mapOf()
+    val newMap: Map<String, Int> = mapOf()
 
-val newMap2 = mapOf<String, Int>()
+    val newMap2 = mapOf<String, Int>()
 
 // Создание неизменяемого словаря, где ключами являются целые числа, а значениями строки
 // Инициализируем(заполняем) сразу этот словарь несколькими значениями
 
-val newMap3 = mapOf<Int, String>(1 to "a" , 2 to "b")
+    val newMap3: Map<Int, String> = mapOf<Int, String>(1 to "a", 2 to "b")
 
 // создаём переменную и проинициализируем её изменяемым словарем
 
-val newMap4 = mutableMapOf(1 to "955")
+    val newMap4 = mutableMapOf(1 to "955")
 
-newMap4[34]= "dfkf"   // добавляем значение в изменяемый словарь
+    newMap4[34] = "dfkf"   // добавляем значение в изменяемый словарь
 
-println(newMap4[1])  // получаем значение из словаря и распечатываем
-println(newMap3[568]) // если значения нет в словаре распечатает null
+    println(newMap4[1])  // получаем значение из словаря и распечатываем
+    println(newMap3[568]) // если значения нет в словаре распечатает null
+
+    // удаление ключа из словаря
+    newMap4.remove(34)
+
+    //перебор словаря в цикле
+
+    for (enteries in newMap3) {
+        println("${enteries.key}:${enteries.value}")
+    }
+
+// вариант где мы указываем сразу название переменной для ключа и для значения
+
+    for ((key, value) in newMap3) {
+        println("$key : $value")
+    }
 
 
+// создаём словарь в котором ключами будут строки, а значениями списки целых чисел
 
 
+    val myOneMap: Map<String, List<Int>> = mapOf("Hey" to listOf(1, 2, 3))
+
+// поиск по сложным типам ключей. не будет задачки
 
 }
+// пишем функцию, которая нам будет искать ключ по значению Функция будет принимать мапу
+
+    fun searchKey(myMap:Map<String, String>, word: String):String {
+        for ((key, value) in myMap) {
+            if (value == word) return key
+        }
+        return "smth"
+    }
+
+// ПРОДОЛЖИТЬ С 01:55:30
