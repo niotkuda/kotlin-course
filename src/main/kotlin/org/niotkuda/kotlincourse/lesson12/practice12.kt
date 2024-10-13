@@ -1,105 +1,157 @@
 package org.niotkuda.kotlincourse.lesson12
 fun main() {
 
+
+                                      //ФУНКЦИИ
+// проверка дз до 00:40:00
+// Функции это один из основных строительных блоков программ, который позволяет
+// объединять повторяющийся код в единые логические блоки.
+// ФУНКЦИЯ = действие/action. Она что-то делает.
+// АРГУМЕНТ-это переменная, мы придумываем сами название и тип.
+// в () объявляем какие типы переменная принимает и названия для этих переменных.
+
+
     replayString(listOf<"dfhdh", "dghjty">)
     var name: String = "fd"
     name = "fekve"
 val result=sum(6.8, 5.7, true)
     println(result)
 
-// проверка дз до 00:40:00
-
-// ФУНКЦИЯ = действие
 
 }
-fun имяФункции(параметры): ТипВозвращаемогоЗначения {
+fun nameFun(параметры): ТипВозвращаемогоЗначения {
+    // имя отражает что функция генерирует, делает, возвращает,
+    // параметры аргумент может отсутствовать, может быть несколько, в аргументах у нас название и тип
 
-//тело функции
-    return значение
+//{} обрамляют тело функции,
+    return значение   // return прекращает всю дальнейшую работу функции.
+// Если после return что-то есть оно выполняться не будет
+    // если в return передано значение оно будет возвращено из функции
 }
 
+
+//  название функции, аргументов нет(), возвращаемого значения нет
 fun sayHello(){
     println("Hello, world!")
 }
 
-fun greetUser(name: String){
+
+
+
+
+// функция с аргументом
+fun greetUser(name: String) {
     println("Hello, $name!")
 }
 
+
+// функция с возвращаемым значением
 fun sum(a: Int, b: Int) : Int {
     return a+b
 }
 
+
+// если функция ничего не возвращает, то return не может быть
 fun printSum(a: Int, b: Int) {
     println("Sum of $a and $b is ${a+b}")
-    return "fun"
 }
 
+// Unit класс, который означает ничто. У него нет полей.
+// Класс заглушка. null значение заглушка
 
+
+
+//
 fun multiply(a: Int, b: Int): Int {
     return a * b
 }
 
-// публичные(доступен внутри модуля) и приватные(доступен внутри файла) методы
+fun multiply1(a: Int, b: Int) = a * b //тип подставит автоматически
+
+
+// и приватные(доступен внутри файла) методы
 //
 private fun calculateDiscount(price: Double): Double {
     return price * 0.1
 }
 
+
+//публичные(доступен внутри модуля)
 fun finalPrice(price: Double): Double {
     val discount = calculateDiscount(price)
     return price - discount
 }
 
+
+
 fun max(a: Int, b: Int) :Int {
    return if (a > b) a else b
 }
+
+
 
 fun findValue(numbers: List<Int>, target: Int) {
     for (number in numbers) {
         if (number == target) {
             println("Value found: $number")
-            return
+            return  // return используется, чтобы остановить выполнение функции
+            // либо использовать break и тогда распечатается значение в принтлн
         }
         println(number)
     }
     println("Value not found")
 }
+// ПРАКТИКА
+// заготовки функций. Сигнатуры.
 
-// заготовки функций сигнатуры??
 //функция которая ничего не принимает и не передаёт
-fun doSmth(){
+
+fun doSomething() = Unit
+
+//
+fun doSomething1(): Unit {
+
 }
 
-fun doSmth() = Unit
+
+//функция, которая не принимает аргументов и возвращает строку
 
 fun getUserName(): String {
     return ""
 }
 
+
+//функция, которая принимает строковый аргумент и не возвращает значения
+
 fun printGrit(grit:String){
 
 }
+
+// функция принимает 2 аргумента типа Double и возвращает Double
 
 fun calcArea(area:Double, area1: Double): Double {
     return 9.0
 }
 
+// функция принимает 2 целых числа и возвращает це
 
 fun find(ch1: Int, ch2: Int): Int {
     return 6
 }
 
+// функция принимает nullable строку и возвращает булево значение
+
 fun isNull(n:String?): Boolean{
     return false
 }
 
+// функция принимает список строк, принимает количество, возвращает Double?
 fun calcDiscount(disc:List<String>, arg: Int?):Double?{
     return null
 }
 
 
-// напиши функцию сум которая принимает 2 дабл числа и булево значение
+// напиши функцию сум которая принимает 2 Double числа и булево значение
 
 fun sum(first:Double, second: Double, flag: Boolean):Double {
     if (flag) {
@@ -107,7 +159,7 @@ fun sum(first:Double, second: Double, flag: Boolean):Double {
     } else {
         val raz = first - second
         return raz
-    }
+    } // код вернёт сумму если флаг будет тру и разницу если флаг будет фолс
     //либо оптимальнее
     fun sum1(first: Double, second: Double, flag: Double): Double {
         return if (flag) {
