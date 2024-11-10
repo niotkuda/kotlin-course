@@ -6,7 +6,7 @@ abstract class Fridge : Powerable, Openable, TemperatureRegulatable, Cleanable {
 
 
 //Стиральная машина  washing machine
-//
+
 //Умная лампа Smart lamp
 //
 //Электронные часы Electronic watch

@@ -40,6 +40,7 @@ class SlotMachine(
         balance += amount
         return balance
     }
+
     private fun openSafe() {
 
     }

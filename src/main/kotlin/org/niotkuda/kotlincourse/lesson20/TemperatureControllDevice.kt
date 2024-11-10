@@ -7,6 +7,7 @@ abstract class TemperatureControllDevice : ProgrammableDevice(), TemperatureRegu
 
 
 
+
     override fun open() {
         isOpen = true
         println("открыто")

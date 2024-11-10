@@ -9,6 +9,7 @@ class FlashlightImpl : Flashlight() {
         TODO("Not yet implemented")
     }
 
+
     override fun getCapacity(): Double {
         TODO("Not yet implemented")
     }

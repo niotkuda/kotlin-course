@@ -18,6 +18,7 @@ abstract class BaseClass(
     fun setPrivateField(value: String) {
         privateField = value
     }
+
     fun getAll(): String {
         return mapOf(
             "privateVal" to privateVal,
