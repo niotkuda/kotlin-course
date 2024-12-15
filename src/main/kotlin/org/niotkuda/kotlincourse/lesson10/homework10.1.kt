@@ -2,7 +2,7 @@ package org.niotkuda.kotlincourse.lesson10
 fun main() {
 //Работа со списками List
 
-    var list: = Any
+ //   var list: = Any
 
 //Задание 1: Создание Пустого Списка
 //Создайте пустой неизменяемый список целых чисел.
@@ -33,26 +33,28 @@ fun main() {
 //Задание 3: Создание Изменяемого Списка
 //Создайте изменяемый список целых чисел и инициализируйте его значениями от 1 до 5.
 
-    fun listOfInts() {
-    val listOfInts = mutableListOf<Int>()
+//    fun listOfInts() {
+//    val listOfInts = mutableListOf<Int>()
+//
+//        for (i in 0..4) listofInts.add(i + 1)
+//
+//        println(listOfInts)
+//}
 
-        for (i in 0..4) listofInts.add(i + 1)
 
-        println(listOfInts)
-}
 //    val mutableList = mutableListOf(1..5)
 //    println()
 
 //Задание 4: Добавление Элементов в Список
 //Имея изменяемый список целых чисел, добавьте в него новые элементы (например, 6, 7, 8).
 
-fun listOfIntsExpanded(List: MutableList<Int>) {
-
-    list.add(6)
-    list.add(7)
-    list.add(8)
-
-}
+//fun listOfIntsExpanded(List: MutableList<Int>) {
+//
+//    list.add(6)
+//    list.add(7)
+//    list.add(8)
+//
+//}
 
 //Задание 5: Удаление Элементов из Списка
 //Имея изменяемый список строк, удалите из него определенный элемент (например, "World").
@@ -69,16 +71,16 @@ fun removeFromList(list: MutableList<String>) {
 //Задание 6: Перебор Списка в Цикле
 //Создайте список целых чисел и используйте цикл для вывода каждого элемента на экран.
 
-    fun loop() {
-        val list6 = listOf(1,2,3,4,5,6)
-        for (value in list) {
-            println(value)
-        }
+//    fun loop() {
+//        val list6 = listOf(1,2,3,4,5,6)
+//        for (value in list) {
+//            println(value)
+//        }
 
 //        for (i in list6) {
 //            println(i)
         }
-    }
+//    }
 
 
 
@@ -94,11 +96,11 @@ fun getString() {
 //Задание 8: Перезапись Элементов Списка по Индексу 00:40:00
 //Имея изменяемый список чисел, измените значение элемента на определенной позиции (например, замените элемент на позиции 2 на новое значение).
 
-fun changeElement() {
-    val list = mutableListOf((1, 2, 3, 4, 5, 6)
-    list.add(2, 99)
-    println(list)
-}
+//fun changeElement() {
+//    val list = mutableListOf((1, 2, 3, 4, 5, 6)
+//    list.add(2, 99)
+//    println(list)
+//}
 
 
 
@@ -131,30 +133,34 @@ fun unite() {
 fun minAndMax() {
 
 
-val list = listOf((1, 2, 3, 4, 5, 6, 7, 8)
-var min = list[0]
-var max = list[0]
+//val list = listOf((1, 2, 3, 4, 5, 6, 7, 8)
+//var min = list[0]
+//var max = list[0]
+//
+//for (value in list) {
+//    if (value < min) {
+//        min = value
+//    }
+//    if (value > max) {
+//        max = value
+//    }
+//}
+//}
 
-for (value in list) {
-    if (value < min) {
-        min = value
-    }
-    if (value > max) {
-        max = value
-    }
-}
-}
+
 //Задание 11: Фильтрация Списка
 //Имея список целых чисел, создайте новый список,
 //содержащий только четные числа из исходного списка используя цикл.
 
-fun evensOnly(list: List<Int>) {
+    fun evensOnly(list: List<Int>) {
 
-    val listOfEvens = mutableListOf<Int>()
+        val listOfEvens = mutableListOf<Int>()
 
-    for (value in list) {
-        (value % 2 == 0)
-        listOfEvens.add(value)
+        for (value in list) {
+            (value % 2 == 0)
+            listOfEvens.add(value)
+        }
+        println(listOfEvens)
     }
-    println(listOfEvens)
+
 }

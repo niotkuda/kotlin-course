@@ -1,5 +1,8 @@
 package org.niotkuda.kotlincourse.lesson17
-
+//наследование
+// в ООП существует основные 2 типа наследования. Множественные и одиночные.
+// В котлин используется одиночные.
+// Можно унаследоваться только от одного класса
 open class Vehicle(
     val maxWeight: Int,
     val passengerCapacity: Int,

@@ -1,4 +1,4 @@
-package org.niotkuda.kotlincourse.lesson15
+package org.niotkuda.kotlincourse.lesson15.homework
 
 object Moon {
     var isVisible: Boolean = false

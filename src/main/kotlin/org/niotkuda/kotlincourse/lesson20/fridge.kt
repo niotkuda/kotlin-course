@@ -1,25 +1,25 @@
-package org.niotkuda.kotlincourse.lesson20
-
-abstract class Fridge : Powerable, Openable, TemperatureRegulatable, Cleanable {
-
-}
-
-
-//Стиральная машина  washing machine
-
-//Умная лампа Smart lamp
+//package org.niotkuda.kotlincourse.lesson20
 //
-//Электронные часы Electronic watch
+//abstract class Fridge : Powerable, Openable, TemperatureRegulatable, Cleanable {
 //
-//Робот-пылесос
+//}
 //
-//Robot vacuum cleaner
 //
-//Механические часы Mechanical watch
+////Стиральная машина  washing machine
 //
-//Фонарик Flashlight
+////Умная лампа Smart lamp
+////
+////Электронные часы Electronic watch
+////
+////Робот-пылесос
+////
+////Robot vacuum cleaner
+////
+////Механические часы Mechanical watch
+////
+////Фонарик Flashlight
+////
+////Кофемашина Coffee machine
+////
+////Умная колонка Smart speaker
 //
-//Кофемашина Coffee machine
-//
-//Умная колонка Smart speaker
-

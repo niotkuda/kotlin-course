@@ -1,4 +1,4 @@
-package org.niotkuda.kotlincourse.lesson15
+package org.niotkuda.kotlincourse.lesson15.homework
 
 class Emotion(
     val type: String,

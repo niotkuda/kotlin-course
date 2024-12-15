@@ -12,7 +12,7 @@ fun main() {
 //Задание 2: Создание Пустого Массива
 //Создайте пустой массив строк размером 10 элементов.
 
-    val emptyArray0: = Array(10) { "" }
+    val emptyArray0 = Array(10) { "" }
 // val emptyArray0: Array<String> = Array(10) { "" }
 
 //Задание 3: Заполнение Массива в Цикле
@@ -89,7 +89,7 @@ fun main() {
             result = count
             break
         }
-        count++
+                //        count+
     }
 
     println(result)
